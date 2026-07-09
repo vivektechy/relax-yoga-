@@ -41,22 +41,22 @@ export default function Header() {
               {/* <Leaf className="w-5 h-5 text-white" /> */}
               <img src="/images/logo-removebg-preview.png" alt="logo" />
             </div>
-            <div className="flex flex-col leading-none">
-              <span
-                className={`font-poppins font-bold text-lg tracking-tight transition-colors ${
-                  scrolled ? 'text-charcoal' : 'text-white'
-                }`}
-              >
-                Relax Yoga
-              </span>
-              <span
-                className={`font-inter text-xs tracking-widest transition-colors ${
-                  scrolled ? 'text-sage' : 'text-mint'
-                }`}
-              >
-                CENTRE
-              </span>
-            </div>
+           <div className="leading-none whitespace-nowrap">
+  <span
+    className={`font-poppins font-bold text-lg transition-colors ${
+      scrolled ? 'text-charcoal' : 'text-white'
+    }`}
+  >
+    Relax Yoga{" "}
+  </span>
+  <span
+    className={`font-poppins font-bold text-lg transition-colors ${
+      scrolled ? 'text-sage' : 'text-mint'
+    }`}
+  >
+    Centre
+  </span>
+</div>
           </Link>
 
           {/* Desktop Nav */}
