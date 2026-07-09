@@ -40,13 +40,13 @@ export default function FounderSection() {
           <div className="relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <img src="/images/founder.png"
-                alt="Dharmanath Singh – Founder, Relax Yoga Centre"
+                alt="Dharmnath Singh – Founder, Relax Yoga Centre"
                 className="w-full h-[500px] object-cover object-center"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-transparent to-transparent" />
               <div className="absolute bottom-6 left-6 right-6">
                 <div className="glass rounded-2xl p-4">
-                  <p className="font-poppins font-bold text-white text-xl">Dharmanath Singh</p>
+                  <p className="font-poppins font-bold text-white text-xl">Dharmnath Singh</p>
                   <p className="font-inter text-white/80 text-sm mt-1">
                     Founder &amp; Head Yoga Instructor
                   </p>
@@ -61,24 +61,14 @@ export default function FounderSection() {
             </div>
 
             {/* Floating reviews badge */}
-            <div className="absolute -bottom-4 -left-4 bg-white rounded-2xl p-4 shadow-xl">
-              <div className="flex items-center gap-1 mb-1">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-3 h-3 fill-amber-400 text-amber-400" />
-                ))}
-              </div>
-              <p className="font-poppins font-bold text-charcoal text-sm">4.9/5 Rating</p>
-              <p className="font-inter text-xs text-charcoal/60">200+ Google Reviews</p>
-            </div>
-          </div>
-
+          
           {/* Right: Content */}
           <div>
             <h3 className="font-poppins font-bold text-2xl md:text-3xl text-charcoal mb-4">
-              Dharmanath Singh
+              Dharmnath Singh
             </h3>
                    <p className="font-inter text-charcoal/70 leading-relaxed mb-4">
-  I am Dharmanath Singh, a dedicated yoga instructor with over 15 years of
+  I am Dharmnath Singh, a dedicated yoga instructor with over 15 years of
   experience helping people achieve physical, mental, and spiritual well-being
   through yoga, pranayama, meditation, and holistic wellness practices.
 </p>
