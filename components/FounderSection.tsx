@@ -61,7 +61,7 @@ export default function FounderSection() {
             </div>
 
             {/* Floating reviews badge */}
-          
+          </div>
           {/* Right: Content */}
           <div>
             <h3 className="font-poppins font-bold text-2xl md:text-3xl text-charcoal mb-4">
