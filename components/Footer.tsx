@@ -114,12 +114,12 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-mint flex-shrink-0 mt-0.5" />
-                <span className="font-inter text-sm text-white/60">Patna, Bihar – 800001</span>
+                <span className="font-inter text-sm text-white/60">Patna, Bihar – 800020</span>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-mint flex-shrink-0" />
                 <a href="tel:+919876543210" className="font-inter text-sm text-white/60 hover:text-mint transition-colors">
-                  +91-9876543210
+                  +91-9835384062
                 </a>
               </div>
               <div className="flex items-center gap-3">
@@ -154,7 +154,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="container-custom py-4 flex flex-col sm:flex-row items-center justify-between gap-2">
           <p className="font-inter text-xs text-white/40 text-center sm:text-left">
-            &copy; {new Date().getFullYear()} Relax Yoga Centre. All rights reserved. Founded by Dharmanath Singh.
+            &copy; {new Date().getFullYear()} Relax Yoga Centre. All rights reserved. Founded by Dharmnath Singh.
           </p>
           <p className="font-inter text-xs text-white/40">
             Patna, Bihar, India
