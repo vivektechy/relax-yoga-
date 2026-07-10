@@ -45,9 +45,9 @@ export default function HeroSection() {
 
           {/* Headline */}
           <h1 className="font-poppins font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white leading-tight mb-6">
-            The complete Health
-            <span className="block text-mint">Body, Mind</span>
-            <span className="block">& welness solution</span>
+            The complete Health ,
+            <span className="block text-mint">Body, Mind,</span>
+            <span className="block">& wellness solution</span>
           </h1>
 
           {/* Subheadline */}
