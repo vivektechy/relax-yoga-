@@ -33,9 +33,9 @@ const seoLinks = [
 ];
 
 const socials = [
-  { href: '#', icon: Instagram, label: 'Instagram' },
-  { href: '#', icon: Facebook, label: 'Facebook' },
-  { href: '#', icon: Youtube, label: 'YouTube' },
+  { href: 'https://www.instagram.com/relaxyogacentre/', icon: Instagram, label: 'Instagram' },
+  { href: 'https://www.facebook.com/dnyoga.dharmnathsingh', icon: Facebook, label: 'Facebook' },
+  { href: 'https://www.youtube.com/@RelaxYogaCentre', icon: Youtube, label: 'YouTube' },
   { href: '#', icon: Twitter, label: 'Twitter' },
 ];
 
