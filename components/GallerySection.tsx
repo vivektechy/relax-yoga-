@@ -3,10 +3,10 @@
 import { useState } from 'react';
 import { X, Play } from 'lucide-react';
 
-type Category = 'All' | 'Class' | 'Workshop' | 'Championship' | 'Meditation';
+type Category = 'All' | 'online Class' | 'Workshop' | 'Championship' | 'Meditation';
 
 const galleryItems = [
-  { id: 1, url: '/images/gallery (1).jpeg', type: 'image', category: 'Class', title: 'Morning Yoga Session' },
+  { id: 1, url: '/images/gallery (1).jpeg', type: 'image', category: ' online Class', title: 'Morning Yoga Session' },
   { id: 2, url: 'https://images.squarespace-cdn.com/content/v1/656753170118141586dfc6c4/70f9ac32-a24a-45c4-b2c1-44a457fc8c0a/web+triabgle+closer+Wendy+Oberg.jpg',   type: 'image', category: 'Class', title: 'Group Training' }, 
   { id: 4, url: 'https://th.bing.com/th/id/OIP.IGpfz-yCC3f-hvBI36nPUgHaDo?w=301&h=171&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3', type: 'image', category: 'Workshop', title: 'Wellness Workshop' },
   { id: 5, url: '/images/gallery (4).jpeg', type: 'image', category: 'Workshop', title: 'Flexibility Training' },
@@ -16,10 +16,10 @@ const galleryItems = [
   { id: 9, url: '/images/gallery (8).jpeg', type: 'image', category: 'Meditation', title: 'Deep Relaxation' },
   { id: 10, url: '/images/gallery (9).jpeg', type: 'image', category: 'Championship', title: 'Yoga Championship 2024' },
   { id: 11, url: 'https://images.pexels.com/photos/3822583/pexels-photo-3822583.jpeg?auto=compress&cs=tinysrgb&w=800', type: 'image', category: 'Championship', title: 'State Level Competition' },
-  { id: 12, url: 'https://tse1.mm.bing.net/th/id/OIP.eCwirt4jWo5vF5ZtcQQamgAAAA?r=0&pid=ImgDet&w=184&h=276&c=7&dpr=1.3&o=7&rm=3', type: 'image', category: 'Class', title: 'Power Yoga' },
+  { id: 12, url: 'https://tse1.mm.bing.net/th/id/OIP.eCwirt4jWo5vF5ZtcQQamgAAAA?r=0&pid=ImgDet&w=184&h=276&c=7&dpr=1.3&o=7&rm=3', type: 'image', category: 'online Class', title: 'Power Yoga' },
 ];
 
-const categories: Category[] = ['All', 'Class', 'Workshop', 'Championship', 'Meditation'];
+const categories: Category[] = ['All', 'online Class', 'Workshop', 'Championship', 'Meditation'];
 
 export default function GallerySection() {
   const [activeCategory, setActiveCategory] = useState<Category>('All');
