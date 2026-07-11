@@ -46,7 +46,7 @@ export default function FounderSection() {
               <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-transparent to-transparent" />
               <div className="absolute bottom-6 left-6 right-6">
                 <div className="glass rounded-2xl p-4">
-                  <p className="font-poppins font-bold text-white text-xl">Dharmnath Singh</p>
+                  <p className="font-poppins font-bold text-white text-xl">masum patel </p>
                   <p className="font-inter text-white/80 text-sm mt-1">
                     Founder &amp; Head Yoga Instructor
                   </p>
