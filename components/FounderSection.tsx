@@ -40,7 +40,7 @@ export default function FounderSection() {
           <div className="relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <img src="/images/founder.png"
-                alt="Dharmnath Singh – Founder, Relax Yoga Centre"
+                alt="masum patel – Founder, Relax Yoga Centre"
                 className="w-full h-[500px] object-cover object-center"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-transparent to-transparent" />
