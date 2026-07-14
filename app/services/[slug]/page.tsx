@@ -32,7 +32,7 @@ const serviceDetails: Record<string, {
       'Our Weight Loss Yoga program combines dynamic asana sequences, power yoga, and targeted breathwork to accelerate metabolism and promote sustainable weight management. This isn\'t just about burning calories — it\'s about creating a mindful relationship with your body and food.',
     benefits: ['Sustainable weight loss', 'Boosted metabolism', 'Reduced stress eating', 'Improved body composition', 'Enhanced energy levels', 'Better sleep quality'],
     includes: ['Dynamic yoga sequences', 'Power yoga sessions', 'Metabolic breathwork', 'Nutrition guidance', 'Weekly body measurements', 'Progress tracking'],
-    duration: '75 minutes per session',
+    duration: '60 minutes per session',
     groupSize: 'Small groups (max 12)',
     level: 'Beginner to Intermediate',
   },
