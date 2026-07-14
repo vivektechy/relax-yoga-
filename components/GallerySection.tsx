@@ -8,16 +8,16 @@ type Category = 'All' | 'online Class' | 'Workshop' | 'Championship' | 'Meditati
 const galleryItems = [
   
 
-  { id: 6, url: 'https://images.squarespace-cdn.com/content/v1/656753170118141586dfc6c4/70f9ac32-a24a-45c4-b2c1-44a457fc8c0a/web+triabgle+closer+Wendy+Oberg.jpg',   type: 'image', category: 'online Class', title: 'Group Training' }, 
-  { id: 7, url: 'https://th.bing.com/th/id/OIP.IGpfz-yCC3f-hvBI36nPUgHaDo?w=301&h=171&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3', type: 'image', category: 'Workshop', title: 'Wellness Workshop' },
-  { id: 8, url: '/images/gallery (4).jpeg', type: 'image', category: 'Workshop', title: 'Flexibility Training' },
-  { id: 9, url: 'https://th.bing.com/th/id/R.3b74bdf40c759dd2209ccf4e3993cf42?rik=Y9MQZTEQ%2bk6uEw&riu=http%3a%2f%2fcrunch.com%2fwp-content%2fuploads%2f2024%2f05%2fCR011AG_May-w-o-5-13-article-images_Hot-Yoga-FIERCE_article-image_5.28.24_2.jpg&ehk=zGsm%2bhzOZg%2ftutqsCu6UDFUCq81R9bWYKhuM3JFXzLs%3d&risl=&pid=ImgRaw&r=0', type: 'image', category: 'Workshop', title: 'Corporate Wellness' },
-  { id: 10, url: 'https://tse3.mm.bing.net/th/id/OIP.x9jqhop0yvFRXjHyzvcRwQHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3', type: 'image', category: 'Meditation', title: 'Morning Meditation' },
-  { id: 11, url: '/images/gallery (7).jpeg', type: 'image', category: 'Meditation', title: 'Guided Meditation' },
-  { id: 12, url: '/images/gallery (8).jpeg', type: 'image', category: 'Meditation', title: 'Deep Relaxation' },
-  { id: 13, url: '/images/gallery (9).jpeg', type: 'image', category: 'Championship', title: 'Yoga Championship 2024' },
-  { id: 14, url: 'https://images.pexels.com/photos/3822583/pexels-photo-3822583.jpeg?auto=compress&cs=tinysrgb&w=800', type: 'image', category: 'Championship', title: 'State Level Competition' },
-  { id: 15, url: 'https://tse1.mm.bing.net/th/id/OIP.eCwirt4jWo5vF5ZtcQQamgAAAA?r=0&pid=ImgDet&w=184&h=276&c=7&dpr=1.3&o=7&rm=3', type: 'image', category: 'online Class', title: 'Power Yoga' },
+  { id: 1, url: 'https://images.squarespace-cdn.com/content/v1/656753170118141586dfc6c4/70f9ac32-a24a-45c4-b2c1-44a457fc8c0a/web+triabgle+closer+Wendy+Oberg.jpg',   type: 'image', category: 'online Class', title: 'Group Training' }, 
+  { id: 2, url: 'https://th.bing.com/th/id/OIP.IGpfz-yCC3f-hvBI36nPUgHaDo?w=301&h=171&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3', type: 'image', category: 'Workshop', title: 'Wellness Workshop' },
+  { id: 3, url: '/images/gallery (4).jpeg', type: 'image', category: 'Workshop', title: 'Flexibility Training' },
+  { id: 4, url: 'https://th.bing.com/th/id/R.3b74bdf40c759dd2209ccf4e3993cf42?rik=Y9MQZTEQ%2bk6uEw&riu=http%3a%2f%2fcrunch.com%2fwp-content%2fuploads%2f2024%2f05%2fCR011AG_May-w-o-5-13-article-images_Hot-Yoga-FIERCE_article-image_5.28.24_2.jpg&ehk=zGsm%2bhzOZg%2ftutqsCu6UDFUCq81R9bWYKhuM3JFXzLs%3d&risl=&pid=ImgRaw&r=0', type: 'image', category: 'Workshop', title: 'Corporate Wellness' },
+  { id: 5, url: 'https://tse3.mm.bing.net/th/id/OIP.x9jqhop0yvFRXjHyzvcRwQHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3', type: 'image', category: 'Meditation', title: 'Morning Meditation' },
+  { id: 6, url: '/images/gallery (7).jpeg', type: 'image', category: 'Meditation', title: 'Guided Meditation' },
+  { id: 7, url: '/images/gallery (8).jpeg', type: 'image', category: 'Meditation', title: 'Deep Relaxation' },
+  { id: 8, url: '/images/gallery (9).jpeg', type: 'image', category: 'Championship', title: 'Yoga Championship 2024' },
+  { id: 9, url: 'https://images.pexels.com/photos/3822583/pexels-photo-3822583.jpeg?auto=compress&cs=tinysrgb&w=800', type: 'image', category: 'Championship', title: 'State Level Competition' },
+  { id: 10, url: 'https://tse1.mm.bing.net/th/id/OIP.eCwirt4jWo5vF5ZtcQQamgAAAA?r=0&pid=ImgDet&w=184&h=276&c=7&dpr=1.3&o=7&rm=3', type: 'image', category: 'online Class', title: 'Power Yoga' },
 ];
 
 const categories: Category[] = ['All', 'online Class', 'Workshop', 'Championship', 'Meditation'];
