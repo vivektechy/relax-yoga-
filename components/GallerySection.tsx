@@ -8,9 +8,7 @@ type Category = 'All' | 'online Class' | 'Workshop' | 'Championship' | 'Meditati
 const galleryItems = [
   { id: 1, url: '/images/online_class (1).jpeg', type: 'image', category: 'online Class', title: 'online Yoga Session' },
    { id: 2, url: '/images/online_class (2).jpeg', type: 'image', category: 'online Class', title: 'online  Yoga Session' },
-   { id: 3, url: '/images/online_class (3).jpeg', type: 'image', category: 'online Class', title: 'Morning Yoga Session' },
-   { id: 4, url: '/images/online_class (4).jpeg', type: 'image', category: 'online Class', title: 'Morning Yoga Session' },
-   { id: 5, url: '/images/online_class (6).jpeg', type: 'image', category: 'online Class', title: 'Morning Yoga Session' },
+
   { id: 6, url: 'https://images.squarespace-cdn.com/content/v1/656753170118141586dfc6c4/70f9ac32-a24a-45c4-b2c1-44a457fc8c0a/web+triabgle+closer+Wendy+Oberg.jpg',   type: 'image', category: 'online Class', title: 'Group Training' }, 
   { id: 7, url: 'https://th.bing.com/th/id/OIP.IGpfz-yCC3f-hvBI36nPUgHaDo?w=301&h=171&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3', type: 'image', category: 'Workshop', title: 'Wellness Workshop' },
   { id: 8, url: '/images/gallery (4).jpeg', type: 'image', category: 'Workshop', title: 'Flexibility Training' },
