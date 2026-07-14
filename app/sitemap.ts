@@ -3,8 +3,8 @@ import { MetadataRoute } from 'next';
 const BASE_URL = 'https://relaxyogacentre.in';
 
 const servicesSlugs = [
-  'therapeutic-yoga',
   'weight-loss-yoga',
+  'therapeutic-yoga',
   'corporate-yoga',
   'home-yoga',
   'online-yoga',
