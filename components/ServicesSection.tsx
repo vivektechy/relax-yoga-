@@ -4,79 +4,140 @@ import Link from 'next/link';
 import { Heart, TrendingDown, Building2, Home, Monitor, Brain, GraduationCap, ArrowRight } from 'lucide-react';
 
 const services = [
-    {
-    slug: 'General Fitness yoga',
-    title: 'General Fitness yoga',
-    description: 'Dynamic yoga sequences combined with breathwork for sustainable, healthy weight management.',
+    
+  {
+    slug: "general-fitness-yoga",
+    title: "General Fitness Yoga",
+    description: "Improve flexibility, strength, stamina and overall wellness with daily yoga practice.",
+    time: "6:00 AM – 7:00 AM",
+    fee: "₹2,000 / Month",
+    icon: Heart,
+    image: "/services/general-fitness.jpg",
+    color: "from-green-50 to-emerald-50",
+    badge: "Popular",
+  },
+  {
+    slug: "weight-loss-yoga",
+    title: "Weight Loss Yoga",
+    description: "Dynamic yoga sequences for healthy weight management and improved metabolism.",
+    time: "7:00 AM – 8:00 AM",
+    fee: "₹2,000 / Month",
     icon: TrendingDown,
-    image: 'https://images.pexels.com/photos/4056535/pexels-photo-4056535.jpeg?auto=compress&cs=tinysrgb&w=600',
-    color: 'from-blue-50 to-amber-50',
-    badge: null,
-    },
-    {
-    slug: 'weight-loss-yoga',
-    title: 'Weight Loss Yoga',
-    description: 'Dynamic yoga sequences combined with breathwork for sustainable, healthy weight management.',
-    icon: TrendingDown,
-    image: 'https://images.pexels.com/photos/4056535/pexels-photo-4056535.jpeg?auto=compress&cs=tinysrgb&w=600',
-    color: 'from-orange-50 to-amber-50',
+    image: "/services/weight-loss.jpg",
+    color: "from-orange-50 to-amber-50",
     badge: null,
   },
-    
-    slug: 'therapeutic-yoga',
-    title: 'Therapeutic Yoga',
-    description: 'Heal chronic pain, manage stress, and restore balance through specialized therapeutic yoga tailored to your condition.',
+  {
+    slug: "female-yoga",
+    title: "Female Yoga",
+    description: "Special yoga sessions designed exclusively for women of all age groups.",
+    time: "8:00 AM – 9:00 AM",
+    fee: "₹1,500 / Month",
     icon: Heart,
-    image: 'https://images.pexels.com/photos/3822622/pexels-photo-3822622.jpeg?auto=compress&cs=tinysrgb&w=600',
-    color: 'from-rose-50 to-pink-50',
-    badge: 'Most Popular',
+    image: "/services/female-yoga.jpg",
+    color: "from-pink-50 to-rose-50",
+    badge: "Women",
+  },
+  {
+    slug: "championship-yoga",
+    title: "Yoga Championship",
+    description: "Professional coaching for District, State, National and International Yoga Championships.",
+    time: "10:00 AM – 11:00 AM",
+    fee: "₹700 / Month",
+    icon: GraduationCap,
+    image: "/services/championship.jpg",
+    color: "from-yellow-50 to-orange-50",
+    badge: "Training",
+  },
+  {
+    slug: "therapeutic-yoga",
+    title: "Therapeutic Yoga",
+    description: "Personalized yoga therapy for pain relief, stress management and lifestyle diseases.",
+    time: "11:00 AM – 12:00 PM",
+    fee: "₹3,000 / Month",
+    icon: Heart,
+    image: "/services/therapeutic.jpg",
+    color: "from-red-50 to-pink-50",
+    badge: "Most Popular",
+  },
+  {
+    slug: "personal-yoga",
+    title: "Personal Yoga Class",
+    description: "One-to-one personalized yoga sessions based on your goals.",
+    time: "12:00 PM – 3:00 PM",
+    fee: "₹500 / Session",
+    icon: Home,
+    image: "/services/personal.jpg",
+    color: "from-blue-50 to-cyan-50",
+    badge: "Premium",
+  },
+  {
+    slug: "stretching-yoga",
+    title: "Stretching Yoga",
+    description: "Improve flexibility, mobility and posture with personal stretching sessions.",
+    time: "12:00 PM – 3:00 PM",
+    fee: "₹1,000 / Session",
+    icon: Brain,
+    image: "/services/stretching.jpg",
+    color: "from-teal-50 to-cyan-50",
+    badge: null,
+  },
+  {
+    slug: "meditation-pranayama",
+    title: "Meditation & Pranayama",
+    description: "Guided meditation and breathing exercises for mental peace and relaxation.",
+    time: "12:00 PM – 3:00 PM",
+    fee: "₹300 / Session",
+    icon: Brain,
+    image: "/services/meditation.jpg",
+    color: "from-purple-50 to-indigo-50",
+    badge: "Relax",
+  },
+  {
+    slug: "home-yoga",
+    title: "Home Yoga Service",
+    description: "Certified instructors visit your home for personalized yoga sessions.",
+    time: "Flexible",
+    fee: "Contact Us",
+    icon: Home,
+    image: "/services/home.jpg",
+    color: "from-green-50 to-lime-50",
+    badge: "Home Visit",
+  },
+  {
+    slug: "corporate-yoga",
+    title: "Corporate Yoga",
+    description: "Yoga sessions for offices, hospitals, schools and organizations.",
+    time: "Flexible",
+    fee: "₹3,000 / Session",
+    icon: Building2,
+    image: "/services/corporate.jpg",
+    color: "from-blue-50 to-indigo-50",
+    badge: "Corporate",
+  },
+  {
+    slug: "online-yoga",
+    title: "Online Yoga Class",
+    description: "Live interactive yoga classes from anywhere in the world.",
+    time: "9:00 AM – 10:00 AM",
+    fee: "₹1,000 / Month",
+    icon: Monitor,
+    image: "/services/online.jpg",
+    color: "from-violet-50 to-purple-50",
+    badge: "Live",
+  },
+  {
+    slug: "apartment-yoga",
+    title: "Apartment Yoga Classes",
+    description: "Group yoga classes in apartments, societies and residential communities.",
+    time: "Flexible",
+    fee: "₹10,000 / Month",
+    icon: Building2,
+    image: "/services/apartment.jpg",
+    color: "from-emerald-50 to-green-50",
+    badge: "Community",
   },
 
-  {
-    slug: 'corporate-yoga',
-    title: 'Corporate Yoga',
-    description: 'Bring wellness to your workplace with tailored corporate programs to reduce stress and boost productivity.',
-    icon: Building2,
-    image: 'https://images.pexels.com/photos/3775593/pexels-photo-3775593.jpeg?auto=compress&cs=tinysrgb&w=600',
-    color: 'from-blue-50 to-cyan-50',
-    badge: 'New',
-  },
-  {
-    slug: 'home-yoga',
-    title: 'Home Yoga',
-    description: 'Personalized one-on-one sessions at your doorstep — tailored to your schedule and health goals.',
-    icon: Home,
-    image: 'https://images.pexels.com/photos/4662438/pexels-photo-4662438.jpeg?auto=compress&cs=tinysrgb&w=600',
-    color: 'from-green-50 to-emerald-50',
-    badge: null,
-  },
-  {
-    slug: 'online-yoga',
-    title: 'Online Yoga',
-    description: 'Join live interactive classes from anywhere via high-quality video streaming. Flexible and effective.',
-    icon: Monitor,
-    image: 'https://images.pexels.com/photos/4498362/pexels-photo-4498362.jpeg?auto=compress&cs=tinysrgb&w=600',
-    color: 'from-violet-50 to-purple-50',
-    badge: null,
-  },
-  {
-    slug: 'meditation',
-    title: 'Meditation',
-    description: 'Deep guided meditation practices for inner peace, mental clarity, and emotional balance.',
-    icon: Brain,
-    image: 'https://images.pexels.com/photos/3822864/pexels-photo-3822864.jpeg?auto=compress&cs=tinysrgb&w=600',
-    color: 'from-teal-50 to-cyan-50',
-    badge: null,
-  },
-  {
-    slug: 'teacher-training',
-    title: 'Teacher Training',
-    description: 'Comprehensive 200-hour Yoga Teacher Training certification program recognized internationally.',
-    icon: GraduationCap,
-    image: 'https://images.pexels.com/photos/4056723/pexels-photo-4056723.jpeg?auto=compress&cs=tinysrgb&w=600',
-    color: 'from-yellow-50 to-amber-50',
-    badge: 'Certification',
-  },
 ];
 
 export default function ServicesSection() {
@@ -130,9 +191,19 @@ export default function ServicesSection() {
                 <h3 className="font-poppins font-bold text-lg text-charcoal mb-2">
                   {service.title}
                 </h3>
-                <p className="font-inter text-sm text-charcoal/60 leading-relaxed mb-5">
-                  {service.description}
-                </p>
+                <p className="font-inter text-sm text-charcoal/60 leading-relaxed mb-3">
+                 {service.description}
+                    </p>
+
+                <div className="space-y-2 mb-5">
+                <p className="text-sm font-medium">
+                      ⏰ {service.time}
+                 </p>
+
+                <p className="text-sm font-semibold text-sage">
+                 💰 {service.fee}
+                    </p>
+                </div>
                 <Link
                   href={`/services/${service.slug}`}
                   className="inline-flex items-center gap-2 font-inter font-semibold text-sm text-sage hover:text-charcoal transition-colors group/link"
