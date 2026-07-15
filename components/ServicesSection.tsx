@@ -5,12 +5,12 @@ import { Heart, TrendingDown, Building2, Home, Monitor, Brain, GraduationCap, Ar
 
 const services = [
     {
-         slug: 'General Fitness yoga',
+    slug: 'General Fitness yoga',
     title: 'General Fitness yoga',
     description: 'Dynamic yoga sequences combined with breathwork for sustainable, healthy weight management.',
     icon: TrendingDown,
     image: 'https://images.pexels.com/photos/4056535/pexels-photo-4056535.jpeg?auto=compress&cs=tinysrgb&w=600',
-    color: 'from-orange-50 to-amber-50',
+    color: 'from-blue-50 to-amber-50',
     badge: null,
     },
     {
