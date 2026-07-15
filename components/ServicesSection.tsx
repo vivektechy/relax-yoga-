@@ -5,6 +5,15 @@ import { Heart, TrendingDown, Building2, Home, Monitor, Brain, GraduationCap, Ar
 
 const services = [
     {
+         slug: 'General Fitness yoga',
+    title: 'General Fitness yoga',
+    description: 'Dynamic yoga sequences combined with breathwork for sustainable, healthy weight management.',
+    icon: TrendingDown,
+    image: 'https://images.pexels.com/photos/4056535/pexels-photo-4056535.jpeg?auto=compress&cs=tinysrgb&w=600',
+    color: 'from-orange-50 to-amber-50',
+    badge: null,
+    },
+    {
     slug: 'weight-loss-yoga',
     title: 'Weight Loss Yoga',
     description: 'Dynamic yoga sequences combined with breathwork for sustainable, healthy weight management.',
@@ -13,8 +22,7 @@ const services = [
     color: 'from-orange-50 to-amber-50',
     badge: null,
   },
-  
-  {
+    
     slug: 'therapeutic-yoga',
     title: 'Therapeutic Yoga',
     description: 'Heal chronic pain, manage stress, and restore balance through specialized therapeutic yoga tailored to your condition.',
@@ -23,15 +31,7 @@ const services = [
     color: 'from-rose-50 to-pink-50',
     badge: 'Most Popular',
   },
-  {
-    slug: 'weight-loss-yoga',
-    title: 'Weight Loss Yoga',
-    description: 'Dynamic yoga sequences combined with breathwork for sustainable, healthy weight management.',
-    icon: TrendingDown,
-    image: 'https://images.pexels.com/photos/4056535/pexels-photo-4056535.jpeg?auto=compress&cs=tinysrgb&w=600',
-    color: 'from-orange-50 to-amber-50',
-    badge: null,
-  },
+
   {
     slug: 'corporate-yoga',
     title: 'Corporate Yoga',
