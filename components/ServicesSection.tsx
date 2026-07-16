@@ -4,8 +4,89 @@ import Link from 'next/link';
 import { Heart, TrendingDown, Building2, Home, Monitor, Brain, GraduationCap, ArrowRight } from 'lucide-react';
 
 const services = [
-    { slug: 'weight-loss-yoga', title: 'Weight Loss Yoga', description: 'Dynamic yoga sequences combined with breathwork for sustainable, healthy weight management.', icon: TrendingDown, image: 'https://images.pexels.com/photos/4056535/pexels-photo-4056535.jpeg?auto=compress&cs=tinysrgb&w=600', color: 'from-orange-50 to-amber-50', badge: null, }, slug: 'therapeutic-yoga', title: 'Therapeutic Yoga', description: 'Heal chronic pain, manage stress, and restore balance through specialized therapeutic yoga tailored to your condition.', icon: Heart, image: 'https://images.pexels.com/photos/3822622/pexels-photo-3822622.jpeg?auto=compress&cs=tinysrgb&w=600', color: 'from-rose-50 to-pink-50', badge: 'Most Popular', }, { slug: 'corporate-yoga', title: 'Corporate Yoga', description: 'Bring wellness to your workplace with tailored corporate programs to reduce stress and boost productivity.', icon: Building2, image: 'https://images.pexels.com/photos/3775593/pexels-photo-3775593.jpeg?auto=compress&cs=tinysrgb&w=600', color: 'from-blue-50 to-cyan-50', badge: 'New', }, { slug: 'home-yoga', title: 'Home Yoga', description: 'Personalized one-on-one sessions at your doorstep — tailored to your schedule and health goals.', icon: Home, image: 'https://images.pexels.com/photos/4662438/pexels-photo-4662438.jpeg?auto=compress&cs=tinysrgb&w=600', color: 'from-green-50 to-emerald-50', badge: null, }, { slug: 'online-yoga', title: 'Online Yoga', description: 'Join live interactive classes from anywhere via high-quality video streaming. Flexible and effective.', icon: Monitor, image: 'https://images.pexels.com/photos/4498362/pexels-photo-4498362.jpeg?auto=compress&cs=tinysrgb&w=600', color: 'from-violet-50 to-purple-50', badge: null, }, { slug: 'meditation', title: 'Meditation', description: 'Deep guided meditation practices for inner peace, mental clarity, and emotional balance.', icon: Brain, image: 'https://images.pexels.com/photos/3822864/pexels-photo-3822864.jpeg?auto=compress&cs=tinysrgb&w=600', color: 'from-teal-50 to-cyan-50', badge: null, }, { slug: 'teacher-training', title: 'Teacher Training', description: 'Comprehensive 200-hour Yoga Teacher Training certification program recognized internationally.', icon: GraduationCap, image: 'https://images.pexels.com/photos/4056723/pexels-photo-4056723.jpeg?auto=compress&cs=tinysrgb&w=600', color: 'from-yellow-50 to-amber-50', badge: 'Certification', },
+  {
+    slug: 'weight-loss-yoga',
+    title: 'Weight Loss Yoga',
+    description:
+      'Dynamic yoga sequences combined with breathwork for sustainable, healthy weight management.',
+    icon: TrendingDown,
+    image:
+      'https://images.pexels.com/photos/4056535/pexels-photo-4056535.jpeg?auto=compress&cs=tinysrgb&w=600',
+    color: 'from-orange-50 to-amber-50',
+    badge: null,
+  },
 
+  {
+    slug: 'therapeutic-yoga',
+    title: 'Therapeutic Yoga',
+    description:
+      'Heal chronic pain, manage stress, and restore balance through specialized therapeutic yoga tailored to your condition.',
+    icon: Heart,
+    image:
+      'https://images.pexels.com/photos/3822622/pexels-photo-3822622.jpeg?auto=compress&cs=tinysrgb&w=600',
+    color: 'from-rose-50 to-pink-50',
+    badge: 'Most Popular',
+  },
+
+  {
+    slug: 'corporate-yoga',
+    title: 'Corporate Yoga',
+    description:
+      'Bring wellness to your workplace with tailored corporate programs to reduce stress and boost productivity.',
+    icon: Building2,
+    image:
+      'https://images.pexels.com/photos/3775593/pexels-photo-3775593.jpeg?auto=compress&cs=tinysrgb&w=600',
+    color: 'from-blue-50 to-cyan-50',
+    badge: 'New',
+  },
+
+  {
+    slug: 'home-yoga',
+    title: 'Home Yoga',
+    description:
+      'Personalized one-on-one sessions at your doorstep — tailored to your schedule and health goals.',
+    icon: Home,
+    image:
+      'https://images.pexels.com/photos/4662438/pexels-photo-4662438.jpeg?auto=compress&cs=tinysrgb&w=600',
+    color: 'from-green-50 to-emerald-50',
+    badge: null,
+  },
+
+  {
+    slug: 'online-yoga',
+    title: 'Online Yoga',
+    description:
+      'Join live interactive classes from anywhere via high-quality video streaming.',
+    icon: Monitor,
+    image:
+      'https://images.pexels.com/photos/4498362/pexels-photo-4498362.jpeg?auto=compress&cs=tinysrgb&w=600',
+    color: 'from-violet-50 to-purple-50',
+    badge: null,
+  },
+
+  {
+    slug: 'meditation',
+    title: 'Meditation',
+    description:
+      'Deep guided meditation practices for inner peace, mental clarity, and emotional balance.',
+    icon: Brain,
+    image:
+      'https://images.pexels.com/photos/3822864/pexels-photo-3822864.jpeg?auto=compress&cs=tinysrgb&w=600',
+    color: 'from-teal-50 to-cyan-50',
+    badge: null,
+  },
+
+  {
+    slug: 'teacher-training',
+    title: 'Teacher Training',
+    description:
+      'Comprehensive 200-hour Yoga Teacher Training certification program recognized internationally.',
+    icon: GraduationCap,
+    image:
+      'https://images.pexels.com/photos/4056723/pexels-photo-4056723.jpeg?auto=compress&cs=tinysrgb&w=600',
+    color: 'from-yellow-50 to-amber-50',
+    badge: 'Certification',
+  },
 ];
 
 export default function ServicesSection() {
