@@ -110,66 +110,52 @@ export default function ServicesSection() {
 
         {/* Cards Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-          {services.map((service, i) => (
-            <div
-              key={service.slug}
-              className="group relative bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-            >
-              {/* Badge */}
-              {service.badge && (
-                <div className="absolute top-4 right-4 z-10 bg-sage text-white text-xs font-semibold font-inter px-3 py-1 rounded-full">
-                  {service.badge}
-                </div>
-              )}
-
-              {/* Image */}
-              <div className="relative h-48 overflow-hidden">
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-charcoal/40 to-transparent" />
-                <div className={`absolute top-4 left-4 w-10 h-10 rounded-xl bg-gradient-to-br ${service.color} flex items-center justify-center shadow-md`}>
-                  <service.icon className="w-5 h-5 text-sage" />
-                </div>
-              </div>
-
-              {/* Content */}
-              <div className="p-6">
-                <h3 className="font-poppins font-bold text-lg text-charcoal mb-2">
-                  {service.title}
-                </h3>
-                <p className="font-inter text-sm text-charcoal/60 leading-relaxed mb-5">
-                  {service.description}
-                    </p>
-                </div>
-                <Link
-                  href={`/services/${service.slug}`}
-                  className="inline-flex items-center gap-2 font-inter font-semibold text-sm text-sage hover:text-charcoal transition-colors group/link"
-                >
-                  Learn More
-                  <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
-                </Link>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Bottom CTA */}
-        <div className="text-center mt-12">
-          <p className="font-inter text-charcoal/60 mb-4">
-            Not sure which program is right for you?
-          </p>
-          <Link
-            href="#contact"
-            className="inline-flex items-center gap-2 bg-sage/10 hover:bg-sage/20 text-sage font-poppins font-semibold px-6 py-3 rounded-full transition-colors"
-          >
-            Get Free Consultation
-            <ArrowRight className="w-4 h-4" />
-          </Link>
-        </div>
+        {services.map((service) => (
+  <div
+    key={service.slug}
+    className="group relative bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+  >
+    {/* Badge */}
+    {service.badge && (
+      <div className="absolute top-4 right-4 z-10 bg-sage text-white text-xs font-semibold font-inter px-3 py-1 rounded-full">
+        {service.badge}
       </div>
-    </section>
-  );
-}
+    )}
+
+    {/* Image */}
+    <div className="relative h-48 overflow-hidden">
+      <img
+        src={service.image}
+        alt={service.title}
+        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+      />
+
+      <div className="absolute inset-0 bg-gradient-to-t from-charcoal/40 to-transparent" />
+
+      <div
+        className={`absolute top-4 left-4 w-10 h-10 rounded-xl bg-gradient-to-br ${service.color} flex items-center justify-center shadow-md`}
+      >
+        <service.icon className="w-5 h-5 text-sage" />
+      </div>
+    </div>
+
+    {/* Content */}
+    <div className="p-6">
+      <h3 className="font-poppins font-bold text-lg text-charcoal mb-2">
+        {service.title}
+      </h3>
+
+      <p className="font-inter text-sm text-charcoal/60 leading-relaxed mb-5">
+        {service.description}
+      </p>
+
+      <Link
+        href={`/services/${service.slug}`}
+        className="inline-flex items-center gap-2 font-inter font-semibold text-sm text-sage hover:text-charcoal transition-colors group/link"
+      >
+        Learn More
+        <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
+      </Link>
+    </div>
+  </div>
+))}
