@@ -109,7 +109,7 @@ export default function ServicesSection() {
         </div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {services.map((service) => (
             <div
               key={service.slug}
@@ -123,7 +123,7 @@ export default function ServicesSection() {
               )}
 
               {/* Image */}
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-40 overflow-hidden">
                 <img
                   src={service.image}
                   alt={service.title}
@@ -136,11 +136,11 @@ export default function ServicesSection() {
               </div>
 
               {/* Content */}
-              <div className="p-6">
-                <h3 className="font-poppins font-bold text-lg text-charcoal mb-2">
+              <div className="p-4">
+                <h3 className="font-poppins font-bold text-lg text-charcoal mb-1">
                   {service.title}
                 </h3>
-                <p className="font-inter text-sm text-charcoal/60 leading-relaxed mb-5">
+           <p className="font-inter text-sm text-charcoal/60 leading-relaxed mb-4 line-clamp-3">
                   {service.description}
                 </p>
                 <Link
