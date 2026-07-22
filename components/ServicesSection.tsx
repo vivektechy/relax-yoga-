@@ -90,73 +90,93 @@ const services = [
 ];
 
 export default function ServicesSection() {
-  return (
-    <section id="services" className="section-padding bg-white">
-      <div className="container-custom">
-        {/* Heading */}
-        <div className="text-center mb-16">
-          <span className="inline-block font-inter text-sage text-sm font-semibold tracking-widest uppercase mb-3">
-            What We Offer
-          </span>
-          <h2 className="font-poppins font-bold text-3xl sm:text-4xl md:text-5xl text-charcoal mb-4">
-            Programs for Every{' '}
-            <span className="text-gradient">Wellness Goal</span>
-          </h2>
-          <p className="font-inter text-charcoal/60 max-w-2xl mx-auto text-base md:text-lg">
-            Whether you&apos;re a beginner or an advanced practitioner, we have a program
-            tailored specifically for your needs and lifestyle.
-          </p>
-        </div>
+return (
+  <section id="services" className="section-padding bg-white">
+    <div className="container-custom">
+      {/* Heading */}
+      <div className="text-center mb-16">
+        <span className="inline-block font-inter text-sage text-sm font-semibold tracking-widest uppercase mb-3">
+          What We Offer
+        </span>
 
-        {/* Cards Grid */}
- <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-  {services.map((service) => (
-    <div
-      key={service.slug}
-      className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100"
-    >
-      {/* Badge */}
-      {service.badge && (
-        <div className="absolute top-3 right-3 z-10 bg-sage text-white text-[10px] font-semibold font-inter px-2 py-1 rounded-full">
-          {service.badge}
-        </div>
-      )}
+        <h2 className="font-poppins font-bold text-3xl sm:text-4xl md:text-5xl text-charcoal mb-4">
+          Programs for Every{" "}
+          <span className="text-gradient">Wellness Goal</span>
+        </h2>
 
-      {/* Image */}
-      <div className="relative h-36 overflow-hidden">
-        <img
-          src={service.image}
-          alt={service.title}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-        />
-
-        <div className="absolute inset-0 bg-gradient-to-t from-charcoal/30 to-transparent" />
-
-        <div
-          className={`absolute top-3 left-3 w-9 h-9 rounded-xl bg-gradient-to-br ${service.color} flex items-center justify-center shadow`}
-        >
-          <service.icon className="w-4 h-4 text-sage" />
-        </div>
+        <p className="font-inter text-charcoal/60 max-w-2xl mx-auto text-base md:text-lg">
+          Whether you're a beginner or an advanced practitioner, we have a
+          program tailored specifically for your needs and lifestyle.
+        </p>
       </div>
 
-      {/* Content */}
-      <div className="p-4">
-        <h3 className="font-poppins font-semibold text-base text-charcoal mb-1">
-          {service.title}
-        </h3>
+      {/* Cards */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        {services.map((service) => (
+          <div
+            key={service.slug}
+            className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+          >
+            {/* Badge */}
+            {service.badge && (
+              <div className="absolute top-3 right-3 z-10 bg-sage text-white text-[10px] font-semibold px-2 py-1 rounded-full">
+                {service.badge}
+              </div>
+            )}
 
-        <p className="font-inter text-xs text-charcoal/60 leading-5 mb-3 line-clamp-2">
-          {service.description}
+            {/* Image */}
+            <div className="relative h-36 overflow-hidden">
+              <img
+                src={service.image}
+                alt={service.title}
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+
+              <div className="absolute inset-0 bg-gradient-to-t from-charcoal/30 to-transparent" />
+
+              <div
+                className={`absolute top-3 left-3 w-9 h-9 rounded-xl bg-gradient-to-br ${service.color} flex items-center justify-center shadow`}
+              >
+                <service.icon className="w-4 h-4 text-sage" />
+              </div>
+            </div>
+
+            {/* Content */}
+            <div className="p-4">
+              <h3 className="font-poppins font-semibold text-base text-charcoal mb-1">
+                {service.title}
+              </h3>
+
+              <p className="font-inter text-xs text-charcoal/60 leading-5 mb-3 line-clamp-2">
+                {service.description}
+              </p>
+
+              <Link
+                href={`/services/${service.slug}`}
+                className="inline-flex items-center gap-1 font-inter font-medium text-xs text-sage hover:text-charcoal transition-colors group/link"
+              >
+                Learn More
+                <ArrowRight className="w-3.5 h-3.5 group-hover/link:translate-x-1 transition-transform" />
+              </Link>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Bottom CTA */}
+      <div className="text-center mt-12">
+        <p className="font-inter text-charcoal/60 mb-4">
+          Not sure which program is right for you?
         </p>
 
         <Link
-          href={`/services/${service.slug}`}
-          className="inline-flex items-center gap-1 font-inter font-medium text-xs text-sage hover:text-charcoal transition-colors group/link"
+          href="#contact"
+          className="inline-flex items-center gap-2 bg-sage/10 hover:bg-sage/20 text-sage font-poppins font-semibold px-6 py-3 rounded-full transition-colors"
         >
-          Learn More
-          <ArrowRight className="w-3.5 h-3.5 group-hover/link:translate-x-1 transition-transform" />
+          Get Free Consultation
+          <ArrowRight className="w-4 h-4" />
         </Link>
       </div>
     </div>
-  ))}
-</div>
+  </section>
+);
